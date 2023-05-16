@@ -7,7 +7,7 @@
 
 ## :pencil: Description
   
-Track My Code is a react application that allows users to organize and keep track of the coding challenges they want to tackle on https://www.codewars.com/. It offers users a range of features including having a place to refer to an individual coding challenge, setting a deadline for the challenge, tracking the status of a challenge, and much more. Built using HTML/CSS/JS, React, and NodeJS, Track My Code provides an aesthetically pleasing and intuitive user experience with its design.
+Track My Code is a react application that allows users to organize and keep track of the coding challenges they want to tackle on https://www.codewars.com/. It offers users a range of features including having a place to refer to an individual coding challenge, setting a deadline for a challenge, tracking the status of a challenge, and much more. Built using HTML/CSS/JS, React, and NodeJS, Track My Code provides an aesthetically pleasing and intuitive user experience with its design.
   
 ## :camera_flash: Screenshots 
 
