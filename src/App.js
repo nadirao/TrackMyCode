@@ -18,6 +18,7 @@ function App() {
         <Route path="/challenges" element={<ChallengesList />}></Route>
         <Route path="/challenges/:id" element={<Challenges />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
