@@ -10,7 +10,11 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
-      <h1>This is the App Page</h1>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/challenges" element={<ChallengeList />}></Route>
+        <Route path="/challenges/:id" element={<Challenge />}></Route>
+      </Routes>
     </div>
   );
 }
