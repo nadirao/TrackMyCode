@@ -33,3 +33,17 @@
 a {
   text-decoration: none;
 }
+
+.description {
+  background-color: rgb(237, 247, 253);
+  color: navy;
+  margin: 10%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+p{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}

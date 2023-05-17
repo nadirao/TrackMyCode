@@ -11,7 +11,6 @@ export default function Header(props) {
         <Link to="/search">
           <div>Search</div>
         </Link>
-        <a href="https://www.codewars.com/">codewars</a>
         <form
           className="cwsearchbar"
           action="https://www.codewars.com/kata/search"
