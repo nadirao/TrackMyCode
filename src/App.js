@@ -8,8 +8,11 @@ import ChallengesList from './pages/ChallengesList/ChallengesList'
 import Footer from './components/Footer'
 
 
+
+
 function App() {
   return (
+    
     <div className="App">
       <Header />
       <Routes>
