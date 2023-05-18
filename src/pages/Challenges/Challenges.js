@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import MuiDatePicker from "../../components/MUIDatePicker";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -45,6 +45,9 @@ export default function Challenges(props) {
             <CardContent>
               <div className="challenge-description">
                 {props.challenge.description.replace(/`/g, "'").split("\n")[0]}
+                <div className="challenge-url">
+                <Link to={props.challenge.url}>Click here to view {props.challenge.name} on codewars</Link>
+                </div>
               </div>
               <hr />
               <div className="challenge-details">
@@ -69,7 +72,6 @@ export default function Challenges(props) {
               <div className="notes">Description
               <input type="text" placeholder="Write A Note"></input>
               </div>
-
             </CardContent>
             <CardActions>
               <Button size="small">Save Challenge</Button>

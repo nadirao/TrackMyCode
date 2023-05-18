@@ -15,7 +15,7 @@ export default function Search({ fetchChallenge, challenge, loading, setLoading 
     setSearch(e.target.value.replace(/\s+/g, "-").toLowerCase());
     // console.log(e.target.value)
   };
-  console.log(newSearch);
+  // console.log(newSearch);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
