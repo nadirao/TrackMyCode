@@ -1,11 +1,11 @@
-import "./styles/App.css";
+import "../styles/App.css";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Search from "./pages/Search/Search";
-import Home from "./pages/Home/Home";
-import Challenges from "./pages/Challenges/Challenges";
-import ChallengesList from "./pages/ChallengesList/ChallengesList";
-import Footer from "./components/Footer";
+import Header from "./Header";
+import Search from "../pages/Search/Search";
+import Home from "../pages/Home/Home";
+import Challenges from "../pages/Challenges/Challenges";
+import ChallengesList from "../pages/ChallengesList/ChallengesList";
+import Footer from "./Footer";
 import { useState } from "react";
 
 function App() {
@@ -36,11 +36,8 @@ function App() {
           path="/search"
           element={<Search 
           challenge={challenge}
-          setChallenge={setChallenge}
-          loading={loading}
-          setLoading={setLoading}
           fetchChallenge={fetchChallenge}
-          url={url} />}
+          loading={loading} />}
         ></Route>
         <Route path="/challenges" element={<ChallengesList />}></Route>
         <Route

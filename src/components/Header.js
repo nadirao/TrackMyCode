@@ -5,7 +5,7 @@ export default function Header(props) {
   return (
     <header className="header">
       <Link to="/">
-        <img src="https://i.imgur.com/HXi8zz0.png" title="source: imgur.com" />
+        <img src="https://i.imgur.com/HXi8zz0.png" title="source: imgur.com" className="home-logo"/>
       </Link>
       <nav className="navbar">
         <Link to="/search">

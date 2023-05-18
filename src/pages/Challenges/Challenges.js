@@ -25,7 +25,7 @@ export default function Challenges({challenge, setChallenge, loading, setLoading
   // };
   
 
-  console.log("challenge:", challenge);
+  // console.log("challenge:", challenge);
 
   useEffect(() => {
     fetchChallenge(slug);
