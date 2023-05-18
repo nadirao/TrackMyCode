@@ -5,7 +5,7 @@ export default function Header(props) {
   return (
     <header className="header">
       <Link to="/">
-        <img src="https://i.imgur.com/HXi8zz0.png" title="source: imgur.com" className="home-logo"/>
+        <img src="https://i.imgur.com/HXi8zz0.png" title="source: imgur.com" className="home-logo" alt="home-logo"/>
       </Link>
       <nav className="navbar">
         <Link to="/search">
@@ -15,8 +15,8 @@ export default function Header(props) {
           className="cwsearchbar"
           action="https://www.codewars.com/kata/search"
         >
-          <a href="#"></a>
           <input placeholder="search codewars" type="text" name="q" />
+          <button>search</button>
         </form>
       </nav>
     </header>

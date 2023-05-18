@@ -49,7 +49,7 @@ export default function Search({ fetchChallenge, challenge, loading }) {
               {challenge.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {challenge.description.replace(/`/g, "'").split("\n")[0]}
+              {challenge.description}
             </Typography>
           </CardContent>
           <CardActions>

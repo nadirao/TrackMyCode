@@ -1,6 +1,7 @@
 import "../styles/App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
+import SignUpPage from "../pages/SignUpPage/SignUpPage";
 import Search from "../pages/Search/Search";
 import Home from "../pages/Home/Home";
 import Challenges from "../pages/Challenges/Challenges";
@@ -11,6 +12,8 @@ import { useState } from "react";
 function App() {
   const [challenge, setChallenge] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  const [user, setUser] = useState(null);
 
   const url = `https://www.codewars.com/api/v1/code-challenges/`;
 
@@ -29,32 +32,42 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route
-          path="/search"
-          element={<Search 
-          challenge={challenge}
-          fetchChallenge={fetchChallenge}
-          loading={loading} />}
-        ></Route>
-        <Route path="/challenges" element={<ChallengesList />}></Route>
-        <Route
-          path="/challenges/:slug"
-          element={
-            <Challenges
-              challenge={challenge}
-              setChallenge={setChallenge}
-              loading={loading}
-              setLoading={setLoading}
-              fetchChallenge={fetchChallenge}
-              url={url}
-            />
-          }
-        ></Route>
-      </Routes>
-      <Footer />
+      {user ? (
+        <>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route
+              path="/search"
+              element={
+                <Search
+                  challenge={challenge}
+                  fetchChallenge={fetchChallenge}
+                  loading={loading}
+                />
+              }
+            ></Route>
+            <Route path="/challenges" element={<ChallengesList />}></Route>
+            <Route
+              path="/challenges/:slug"
+              element={
+                <Challenges
+                  challenge={challenge}
+                  setChallenge={setChallenge}
+                  loading={loading}
+                  setLoading={setLoading}
+                  fetchChallenge={fetchChallenge}
+                  url={url}
+                  user={user}
+                />
+              }
+            ></Route>
+          </Routes>
+          <Footer />
+        </>
+      ) : (
+        <SignUpPage setUser={setUser} />
+      )}
     </div>
   );
 }

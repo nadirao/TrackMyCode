@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import MuiDatePicker from "../../components/MUIDatePicker";
 import Card from "@mui/material/Card";
@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 
 
-export default function Challenges({challenge, setChallenge, loading, setLoading, url, fetchChallenge}) {
+export default function Challenges(props) {
 
   const { slug } = useParams();
 
@@ -28,7 +28,7 @@ export default function Challenges({challenge, setChallenge, loading, setLoading
   // console.log("challenge:", challenge);
 
   useEffect(() => {
-    fetchChallenge(slug);
+    props.fetchChallenge(slug);
   }, []);
 
   const cardStyle = {
@@ -38,19 +38,18 @@ export default function Challenges({challenge, setChallenge, loading, setLoading
 
   return (
     <div className="Challenge">
-      {loading ? (
+      {props.loading ? (
         <>
-          <div className="challenge-name">{challenge.name}</div>
+          <div className="challenge-name">{props.challenge.name}</div>
           <Card style={cardStyle}>
             <CardContent>
               <div className="challenge-description">
-                {challenge.description.replace(/`/g, "'").split("\n")[0]}
+                {props.challenge.description.replace(/`/g, "'").split("\n")[0]}
               </div>
               <hr />
               <div className="challenge-details">
                 <div className="username">
-                  Assignee
-                  {/* add username */}
+                  Assigned To: {props.user}
                 </div>
                 <div className="status">
                   <label>Status</label>
