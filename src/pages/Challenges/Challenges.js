@@ -5,39 +5,43 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
-import { Typography } from "@material-ui/core";
 
-export default function Challenges(props) {
-  const { id } = useParams();
-  const url = `https://www.codewars.com/api/v1/code-challenges/${id}`;
 
-  const [challenge, setChallenge] = useState([]);
-  const [loading, setLoading] = useState(false);
+export default function Challenges({challenge, setChallenge, loading, setLoading, url, fetchChallenge}) {
 
-  const fetchChallenge = async () => {
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      setChallenge(data);
-      setLoading(!loading);
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  const { slug } = useParams();
+
+  // const fetchChallenge = async () => {
+  //   setLoading(false)
+  //   try {
+  //     const response = await fetch(url+slug);
+  //     const data = await response.json();
+  //     setChallenge(data);
+  //     setLoading(!loading);
+  //     // console.log(data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  
 
   console.log("challenge:", challenge);
 
   useEffect(() => {
-    fetchChallenge();
+    fetchChallenge(slug);
   }, []);
+
+  const cardStyle = {
+    height: '80%',
+    maxWidth: '450px'
+  }
 
   return (
     <div className="Challenge">
       {loading ? (
         <>
           <div className="challenge-name">{challenge.name}</div>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card style={cardStyle}>
             <CardContent>
               <div className="challenge-description">
                 {challenge.description.replace(/`/g, "'").split("\n")[0]}
