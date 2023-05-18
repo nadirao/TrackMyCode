@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './SignUpPage.css'
 
 export default function SignUpPage(props) {
   const [inputValue, setInputValue] = useState("")

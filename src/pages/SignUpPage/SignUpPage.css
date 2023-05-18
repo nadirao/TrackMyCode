@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lora', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.full-screen-container {
+  background-color: rgb(163, 203, 186);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: hsla(203, 17%, 91%, 0.6);
+  border-radius: 10%;
+  padding: 50px 30px;
+  min-width: 350px;
+  width: 50%;
+  max-width: 350px;
+}
+
+.login-title {
+  color: #77bda1;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: #373434;
+  font-weight: lighter;
+  font-size: 1.5em;
+  margin-bottom: 7px;
+}
+
+.input-group input {
+  font-size: 1.5em;
+  padding: 0.1em 0.25em;
+  background-color: hsla(170, 81%, 89%, 0.3);
+  border: 1px solid hsl(201, 100%, 6%);
+  outline: none;
+  border-radius: 5px;
+  color: #080808;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.input-group input:focus {
+  border: 1px solid hsl(125, 33%, 66%);
+}
+
+.login-button {
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 5px;
+  background: hsla(170, 69%, 34%, 0.1);
+  border: 1px solid hsl(199, 93%, 6%);
+  outline: none;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: lighter;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: hsla(140, 22%, 41%, 0.3);
+}
+
+.login-button:focus {
+  background-color: hsla(155, 19%, 35%, 0.5);
+}

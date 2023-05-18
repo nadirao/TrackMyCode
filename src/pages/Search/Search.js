@@ -35,8 +35,8 @@ export default function Search({ fetchChallenge, challenge, loading, setLoading 
         <input className="search" type="submit" value="Search" />
       </form>
       {loading ? ( 
-      <div style={{ margin: "25%" }}>
-        <Card sx={{ maxWidth: 545 }}>
+      <div style={{ margin: "15%" }}>
+        <Card sx={{ maxWidth: 500 }}>
           <CardMedia
             component="img"
             height="140"
