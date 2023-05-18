@@ -10,13 +10,13 @@ export default function SignUpPage(props) {
   const handleSubmit = (evt) => {
     evt.preventDefault()
     props.setUser(inputValue)
-    console.log(inputValue)
+    // console.log(inputValue)
   }
 
   return (
   <div className="full-screen-container">
     <div className="login-container">
-      <h3 className="login-title">Please enter your name below</h3>
+      <h3 className="login-title">Enter your name below</h3>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <label>Name</label>

@@ -8,18 +8,17 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Codewars from "../../assets/codewars-logo.jpeg";
 
-export default function Search({ fetchChallenge, challenge, loading }) {
+export default function Search({ fetchChallenge, challenge, loading, setLoading }) {
   const [newSearch, setSearch] = useState("");
 
   const handleChange = (e) => {
-    setSearch(e.target.value);
+    setSearch(e.target.value.replace(/\s+/g, "-").toLowerCase());
     // console.log(e.target.value)
   };
+  console.log(newSearch);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSearch(newSearch.replace(/\s+/g, "-").toLowerCase());
-    console.log(newSearch);
     fetchChallenge(newSearch);
   };
 
@@ -49,18 +48,18 @@ export default function Search({ fetchChallenge, challenge, loading }) {
               {challenge.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {challenge.description}
+              {challenge.description.replace(/`/g, "'").split("\n")[0]}
             </Typography>
           </CardContent>
           <CardActions>
-            <Link to={`/challenges/${challenge.slug}`}>
-              <Button size="small">Track Progress</Button>
+            <Link to={`/challenges/${newSearch}`}>
+              <Button size="small" onClick={() => setLoading(!loading)}>Track Progress</Button>
             </Link>
           </CardActions>
         </Card>
       </div>
       ) : (
-        <h1>..</h1>
+        <h1>  </h1>
       )}
     </div>
   );

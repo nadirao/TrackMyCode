@@ -44,6 +44,7 @@ function App() {
                   challenge={challenge}
                   fetchChallenge={fetchChallenge}
                   loading={loading}
+                  setLoading={setLoading}
                 />
               }
             ></Route>

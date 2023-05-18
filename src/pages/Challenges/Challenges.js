@@ -77,7 +77,7 @@ export default function Challenges(props) {
           </Card>
         </>
       ) : (
-        <h1>Loading...</h1>
+        <h1></h1>
       )}
     </div>
   );
