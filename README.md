@@ -47,7 +47,7 @@ Track My Code is a react application that allows users to organize and keep trac
   <summary> How to Track the Status of a Challenge </summary>
   <ul>
     <li>Once you've found a challenge, click track progress on your desired challenge</li>
-    <li>Start Tracking</li>
+    <li>Create a status, due date, and a note to track your progress in the challenge</li>
   </ul>
     
 </details>
