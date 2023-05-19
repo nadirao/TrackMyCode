@@ -11,7 +11,7 @@ body {
 }
 
 .full-screen-container {
-  background-color: rgb(163, 203, 186);
+  background-color: rgb(230, 242, 247);
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -22,7 +22,7 @@ body {
 }
 
 .login-container {
-  background-color: hsla(203, 17%, 91%, 0.6);
+  background-color: hsla(203, 67%, 85%, 0.6);
   border-radius: 10%;
   padding: 50px 30px;
   min-width: 350px;
@@ -31,7 +31,7 @@ body {
 }
 
 .login-title {
-  color: #77bda1;
+  color: #4249a8;
   text-align: center;
   margin: 0;
   margin-bottom: 40px;

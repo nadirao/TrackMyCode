@@ -3,6 +3,7 @@
 }
 
 .App {
+  background-color: rgb(230, 242, 247);
   text-align: center;
   display: flex;
   flex-direction: column;

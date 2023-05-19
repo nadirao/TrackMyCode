@@ -55,6 +55,7 @@ export default function Search({ fetchChallenge, challenge, loading, setLoading 
             <Link to={`/challenges/${newSearch}`}>
               <Button size="small" onClick={() => setLoading(!loading)}>Track Progress</Button>
             </Link>
+              <Button size="small">Save {challenge.name}</Button>
           </CardActions>
         </Card>
       </div>
