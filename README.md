@@ -36,7 +36,7 @@ Track My Code is a react application that allows users to organize and keep trac
   
 ## :fire: Getting Started
   
-<details open>
+<details>
   <summary> How to Search for a Challenge </summary>
   <ul>
     <li>Sign up with your name.</li>
