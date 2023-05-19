@@ -9,21 +9,6 @@ import Button from "@mui/material/Button";
 export default function Challenges(props) {
   const { slug } = useParams();
 
-  // const fetchChallenge = async () => {
-  //   setLoading(false)
-  //   try {
-  //     const response = await fetch(url+slug);
-  //     const data = await response.json();
-  //     setChallenge(data);
-  //     setLoading(!loading);
-  //     // console.log(data);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-  // console.log("challenge:", challenge);
-
   useEffect(() => {
     props.fetchChallenge(slug);
   }, []);
