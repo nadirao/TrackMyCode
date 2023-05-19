@@ -25,7 +25,7 @@ Track My Code is a react application that allows users to organize and keep trac
 ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
 ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
 ![Trello](https://img.shields.io/badge/-Trello-05122A?style=flat&logo=trello)
-![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
 ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
 ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
