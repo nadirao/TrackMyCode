@@ -32,7 +32,6 @@ Track My Code is a react application that allows users to organize and keep trac
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)
 ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
-![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-05122A?style=flat&logo=jsonwebtokens)
   
 ## :fire: Getting Started
   
