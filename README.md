@@ -77,5 +77,5 @@ Track My Code is a react application that allows users to organize and keep trac
   
 ## :speaking_head: Acknowledgements
   
-- Thank you Megan for sharing your project 3 link! Your home page inspired mine hehe
+Thank you Megan for sharing your project 3 link! Your home page inspired mine hehe
 
