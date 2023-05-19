@@ -65,3 +65,17 @@ p{
   height: 400px;
   width: 400px;
 }
+
+
+.challenge-description, .challenge-url, .username, .status, .due-date, .notes {
+  padding: 1vmin;
+  margin: 1vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username > label, .status > label, .due-date > label, .notes > label{
+  padding-right: 4vmin;
+}
+

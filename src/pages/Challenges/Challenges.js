@@ -6,9 +6,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 
-
 export default function Challenges(props) {
-
   const { slug } = useParams();
 
   // const fetchChallenge = async () => {
@@ -23,7 +21,6 @@ export default function Challenges(props) {
   //     console.log(error);
   //   }
   // };
-  
 
   // console.log("challenge:", challenge);
 
@@ -32,9 +29,9 @@ export default function Challenges(props) {
   }, []);
 
   const cardStyle = {
-    height: '80%',
-    maxWidth: '450px'
-  }
+    height: "80%",
+    maxWidth: "450px",
+  };
 
   return (
     <div className="Challenge">
@@ -46,13 +43,16 @@ export default function Challenges(props) {
               <div className="challenge-description">
                 {props.challenge.description.replace(/`/g, "'").split("\n")[0]}
                 <div className="challenge-url">
-                <Link to={props.challenge.url}>Click here to view {props.challenge.name} on codewars</Link>
+                  <Link to={props.challenge.url}>
+                    Click here to view '{props.challenge.name}' on codewars
+                  </Link>
                 </div>
               </div>
               <hr />
               <div className="challenge-details">
                 <div className="username">
-                  Assigned To: {props.user}
+                  <label>Assigned To:</label>
+                  <label>{props.user}</label>
                 </div>
                 <div className="status">
                   <label>Status</label>
@@ -64,13 +64,18 @@ export default function Challenges(props) {
                   </select>
                 </div>
                 <div className="due-date">
-                  Due Date
-                  <MuiDatePicker />
+                  <label>Due Date</label>
+                  <label>
+                    <MuiDatePicker />
+                  </label>
                 </div>
               </div>
               <hr />
-              <div className="notes">Description
-              <input type="text" placeholder="Write A Note"></input>
+              <div className="notes">
+                <label>Description</label>
+                <label>
+                  <input type="text" placeholder="Write A Note"></input>
+                </label>
               </div>
             </CardContent>
             <CardActions>
