@@ -2,7 +2,7 @@ import { Box} from "@material-ui/core";
 // import { useState } from "react";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs"
-import { DateCalendar} from "@mui/x-date-pickers/DateCalendar";
+import { DatePicker } from "@mui/x-date-pickers";
 
 export default function MuiDatePicker(){
     // const [value, setValue] = useState(null);
@@ -11,7 +11,7 @@ export default function MuiDatePicker(){
         <Box>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 {/* currently controlled, wip change to controlled */}
-                <DateCalendar/>
+                <DatePicker/>
             </LocalizationProvider>
         </Box>
     )
