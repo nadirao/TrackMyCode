@@ -2,7 +2,7 @@
 
 # Track My Code
 
-### [CLICK TO DEMO](https://track-my-code.herokuapp.com/) (Not Hosted Yet!)
+### [CLICK TO DEMO](https://track-your-code.netlify.app/)
 
 
 ## :pencil: Description
