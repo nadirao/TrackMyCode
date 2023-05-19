@@ -36,6 +36,42 @@ Track My Code is a react application that allows users to organize and keep trac
   
 ## :fire: Getting Started
   
+<details open>
+  <summary> How to Search for a Challenge </summary>
+  <ul>
+    <li>Sign up with your name.</li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</details>
 
+<details>
+  <summary> How to Track the Status of a Challenge </summary>
+  <ul>
+    <li></li>
+    <li></li>
+  </ul>
+    
+</details>
+
+<details open>
+  <summary> Trello Board </summary>
+  <a href="https://trello.com/b/bPnjvYzt/track-my-code"
+    > https://trello.com/b/bPnjvYzt/track-my-code </a
+  >
+</details>
+
+<details open>
+  <summary> Deployed Link (Netlify) </summary>
+  <a href="https://track-your-code.netlify.app/"
+    > https://track-your-code.netlify.app/</a
+  >
+</details>
+  
 ## :satellite: Upcoming Features
+
+- [:star:] 
+
+- [:star:] 
 
