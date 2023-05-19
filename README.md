@@ -39,17 +39,15 @@ Track My Code is a react application that allows users to organize and keep trac
   <summary> How to Search for a Challenge </summary>
   <ul>
     <li>Sign up with your name.</li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Find a challenge on codewars and search for the challenge name</li>
   </ul>
 </details>
 
 <details>
   <summary> How to Track the Status of a Challenge </summary>
   <ul>
-    <li></li>
-    <li></li>
+    <li>Once you've found a challenge, click track progress on your desired challenge</li>
+    <li>Start Tracking</li>
   </ul>
     
 </details>
@@ -70,7 +68,9 @@ Track My Code is a react application that allows users to organize and keep trac
   
 ## :satellite: Upcoming Features
 
-- [:star:] 
+- [:star:] Make the show page functional and save the status of a coding challenge
 
-- [:star:] 
+- [:star:] Seed each API call to a database and create a challenge list out of the API calls
+  
+- [:star:] Connect the app to codewars
 
