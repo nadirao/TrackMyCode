@@ -13,10 +13,10 @@ Track My Code is a react application that allows users to organize and keep trac
 
 | Description | Screenshot |
 | --------------- | --------------- |
+| Sign Up Page  | <img src='/src/readme-imgs/signup-page.png'>  |
 | Home Page  | <img src='/src/readme-imgs/home-page.png'>  |
-| Search Challenges  |  |
-| My Challenges  |   |
-| Challenge  |   |
+| Search Challenges Page | <img src='/src/readme-imgs/search-page.png'> |
+| Challenge Page | <img src='/src/readme-imgs/challenge-page.png'>  |
   
 ## :computer: Technologies Used
 
