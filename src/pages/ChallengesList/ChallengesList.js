@@ -1,5 +1,5 @@
 export default function ChallengesList(){
     return(
-        <h1>This is the ChallengeList Page</h1>
+        <h1>  </h1>
     )
 }
