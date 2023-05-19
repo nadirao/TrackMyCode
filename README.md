@@ -74,4 +74,8 @@ Track My Code is a react application that allows users to organize and keep trac
 - [:star:] Seed each API call to a database and create a challenge list out of the API calls
   
 - [:star:] Connect the app to codewars
+  
+## :speaking_head: Acknowledgements
+  
+- Thank you Megan for sharing your project 3 link! Your home page inspired mine hehe
 
